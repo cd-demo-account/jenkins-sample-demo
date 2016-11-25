@@ -10,7 +10,7 @@ node() {
 
     stage name: 'Version Handling'
     def version = '1.5.0'
-
+    stage name : 'Write file'
     writeFile([file: 'version.txt', text: version])
 
     archive('version.txt')
