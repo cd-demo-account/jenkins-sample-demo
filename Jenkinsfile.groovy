@@ -12,6 +12,7 @@ node() {
     def version = '1.5.0'
     stage name : 'Write file'
     writeFile([file: 'version.txt', text: version])
+    stage name: 'Hello GDG'
 
     archive('version.txt')
 }
